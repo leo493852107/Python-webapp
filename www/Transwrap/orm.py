@@ -226,11 +226,17 @@ class ModelMetaclass(type):
     """
 
     def __new__(cls, name, bases, attrs):
-        # skip base Model class:
+        '''
+        cls     创建的类的对象
+        name    类的名字
+        bases   类继承的父类集合
+        attrs   类的方法(字段)集合
+        '''
+        # 略过 Model 基类
         if name == 'Model':
             return type.__new__(cls, name, bases, attrs)
 
-        # store all subclasses info:
+        # 保存所有的子类信息
         if not hasattr(cls, 'subclasses'):
             cls.subclasses = {}
         if not name in cls.subclasses:
@@ -241,6 +247,7 @@ class ModelMetaclass(type):
         logging.info('Scan ORMapping %s...' % name)
         mappings = dict()
         primary_key = None
+        # 在当前类中(eg. User)查找定义的类属性(Field), 将其保存到 mappings, 并从类属性中去除
         for k, v in attrs.iteritems():
             if isinstance(v, Field):
                 if not v.name:
@@ -261,10 +268,13 @@ class ModelMetaclass(type):
         # check exist of primary key:
         if not primary_key:
             raise TypeError('Primary key not defined in class: %s' % name)
+        # 从类属性中去除掉 Field
         for k in mappings.iterkeys():
             attrs.pop(k)
+        # 若 类没有定义 __table__,则默认其类名为表名
         if not '__table__' in attrs:
             attrs['__table__'] = name.lower()
+        # 给cls增加一些字段:
         attrs['__mappings__'] = mappings
         attrs['__primary_key__'] = primary_key
         attrs['__sql__'] = lambda self: _gen_sql(attrs['__table__'], mappings)
