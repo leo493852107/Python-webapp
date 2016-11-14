@@ -64,6 +64,7 @@ class Dict(dict):
     def __setattr__(self, key, value):
         self[key] = value
 
+
 # 这两句正则有什么区别?
 # _RE_RESPONSE_STATUS = re.compile(r'^\d\d\d(\[\w\ ]+)?$')
 _RE_RESPONSE_STATUS = re.compile(r'^\d\d\d(\ [\w\ ]+)?$')
@@ -1175,7 +1176,7 @@ class Route(object):
         """
         实例对象直接调用时，执行传入的函数对象
         """
-        return self.func((args))
+        return self.func(*args)
 
     def __str__(self):
         if self.is_static:
@@ -1196,7 +1197,7 @@ class StaticFileRoute(object):
         self.route = re.compile('^/static/(.+)$')
 
     def match(self, url):
-        if url.startwith('/static/'):
+        if url.startswith('/static/'):
             return (url[1:],)
         return None
 
@@ -1679,9 +1680,6 @@ def _unquote(s, encoding='utf-8'):
     u'http://example/test?a=1+'
     '''
     return urllib.unquote(s).decode(encoding)
-
-
-
 
 
 if __name__ == '__main__':
