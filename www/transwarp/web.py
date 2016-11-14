@@ -64,9 +64,10 @@ class Dict(dict):
     def __setattr__(self, key, value):
         self[key] = value
 
-
-_RE_RESPONSE_STATUS = re.compile(r'^\d\d\d(\[\w\]+)?$')
-_HEADER_X_POWERED_BY = ('X-Powered-By', 'transwrap/1.0')
+# 这两句正则有什么区别?
+# _RE_RESPONSE_STATUS = re.compile(r'^\d\d\d(\[\w\ ]+)?$')
+_RE_RESPONSE_STATUS = re.compile(r'^\d\d\d(\ [\w\ ]+)?$')
+_HEADER_X_POWERED_BY = ('X-Powered-By', 'transwarp/1.0')
 
 #  用于时区转换
 _TIMEDELTA_ZERO = datetime.timedelta(0)
@@ -325,10 +326,10 @@ class HttpError(object):
     def badrequest():
         '''
         Send a bad request response.
-        >>> raise badrequest()
+        >>> raise HttpError.badrequest()
         Traceback (most recent call last):
           ...
-        HttpError: 400 Bad Request
+        _HttpError: 400 Bad Request
         '''
         return _HttpError(400)
 
@@ -336,7 +337,7 @@ class HttpError(object):
     def unauthorized():
         '''
         Send an unauthorized response.
-        >>> raise unauthorized()
+        >>> raise HttpError.unauthorized()
         Traceback (most recent call last):
           ...
         _HttpError: 401 Unauthorized
@@ -347,7 +348,7 @@ class HttpError(object):
     def forbidden():
         '''
         Send a forbidden response.
-        >>> raise forbidden()
+        >>> raise HttpError.forbidden()
         Traceback (most recent call last):
           ...
         _HttpError: 403 Forbidden
@@ -358,7 +359,7 @@ class HttpError(object):
     def notfound():
         '''
         Send a not found response.
-        >>> raise notfound()
+        >>> raise HttpError.notfound()
         Traceback (most recent call last):
           ...
         _HttpError: 404 Not Found
@@ -369,7 +370,7 @@ class HttpError(object):
     def conflict():
         '''
         Send a conflict response.
-        >>> raise conflict()
+        >>> raise HttpError.conflict()
         Traceback (most recent call last):
           ...
         _HttpError: 409 Conflict
@@ -380,7 +381,7 @@ class HttpError(object):
     def internalerror():
         '''
         Send an internal error response.
-        >>> raise internalerror()
+        >>> raise HttpError.internalerror()
         Traceback (most recent call last):
           ...
         _HttpError: 500 Internal Server Error
@@ -391,7 +392,7 @@ class HttpError(object):
     def redirect(location):
         '''
         Do permanent redirect.
-        >>> raise redirect('http://www.itranswarp.com/')
+        >>> raise HttpError.redirect('http://www.itranswarp.com/')
         Traceback (most recent call last):
           ...
         _RedirectError: 301 Moved Permanently, http://www.itranswarp.com/
@@ -402,7 +403,7 @@ class HttpError(object):
     def found(location):
         '''
         Do temporary redirect.
-        >>> raise found('http://www.itranswarp.com/')
+        >>> raise HttpError.found('http://www.itranswarp.com/')
         Traceback (most recent call last):
           ...
         _RedirectError: 302 Found, http://www.itranswarp.com/
@@ -413,11 +414,11 @@ class HttpError(object):
     def seeother(location):
         '''
         Do temporary redirect.
-        >>> raise seeother('http://www.itranswarp.com/')
+        >>> raise HttpError.seeother('http://www.itranswarp.com/')
         Traceback (most recent call last):
           ...
         _RedirectError: 303 See Other, http://www.itranswarp.com/
-        >>> e = seeother('http://www.itranswarp.com/seeother?r=123')
+        >>> e = HttpError.seeother('http://www.itranswarp.com/seeother?r=123')
         >>> e.location
         'http://www.itranswarp.com/seeother?r=123'
         '''
@@ -668,7 +669,7 @@ class Request(object):
         if not hasattr(self, '_headers'):
             hdrs = {}
             for k, v in self._environ.iteritems():
-                if k.startwith('HTTP_'):
+                if k.startswith('HTTP_'):
                     # convert 'HTTP_ACCEPT_ENCODING' to 'ACCEPT-ENCODING'
                     hdrs[k[5:].replace('_', '-').upper()] = v.decode('utf-8')
             self._headers = hdrs
@@ -772,7 +773,7 @@ class Response(object):
         >>> r.headers
         [('Content-Type', 'text/html; charset=utf-8'), ('Set-Cookie', 's1=ok; Max-Age=3600; Path=/; HttpOnly'), ('X-Powered-By', 'transwarp/1.0')]
         '''
-        L = [(_RESPONSE_HEADER_DICT.get(k, v), v) for k, v in self._headers.iteritems()]
+        L = [(_RESPONSE_HEADER_DICT.get(k, k), v) for k, v in self._headers.iteritems()]
         if hasattr(self, '_cookies'):
             for v in self._cookies.itervalues():
                 L.append(('Set-Cookie', v))
@@ -924,7 +925,7 @@ class Response(object):
             if isinstance(expires, (datetime.date, datetime.datetime)):
                 L.append('Expires=%s' % expires.astimezone(UTC_0).strftime('%a, %d-%b-%Y %H:%M:%S GMT'))
         elif isinstance(max_age, (int, long)):
-            L.append(max_age, (int, long))
+            L.append('Max-Age=%d' % max_age)
         L.append('Path=%s' % path)
         if domain:
             L.append('Domain=%s' % domain)
@@ -969,6 +970,7 @@ class Response(object):
     def status(self):
         '''
         Get response status. Default to '200 OK'.
+
         >>> r = Response()
         >>> r.status
         '200 OK'
@@ -1080,7 +1082,7 @@ def post(path):
 
     def _decorator(func):
         func.__web_route__ = path
-        func.__web_method = 'POST'
+        func.__web_method__ = 'POST'
         return func
 
     return _decorator
@@ -1251,14 +1253,14 @@ class TemplateEngine(object):
 
 
 class Jinja2TemplateEngine(TemplateEngine):
-    '''
+    """
     Render using jinja2 template engine.
     >>> templ_path = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 'test')
     >>> engine = Jinja2TemplateEngine(templ_path)
     >>> engine.add_filter('datetime', lambda dt: dt.strftime('%Y-%m-%d %H:%M:%S'))
     >>> engine('jinja2-test.html', dict(name='Michael', posted_at=datetime.datetime(2014, 6, 1, 10, 11, 12)))
     '<p>Hello, Michael.</p><span>2014-06-01 10:11:12</span>'
-    '''
+    """
 
     def __init__(self, templ_dir, **kw):
         from jinja2 import Environment, FileSystemLoader
@@ -1355,10 +1357,10 @@ def _build_pattern_fn(pattern):
     """
     m = _RE_INTERCEPTROR_STARTS_WITH.match(pattern)
     if m:
-        return lambda p: p.startwith(m.group(1))
+        return lambda p: p.startswith(m.group(1))
     m = _RE_INTERCEPTROR_ENDS_WITH.match(pattern)
     if m:
-        return lambda p: p.endwith(m.group(1))
+        return lambda p: p.endswith(m.group(1))
     raise ValueError('Invalid pattern definition in interceptor.')
 
 
@@ -1458,7 +1460,7 @@ def _load_module(module_name):
     if last_dot == (-1):
         return __import__(module_name, globals(), locals())
     from_module = module_name[:last_dot]
-    import_module = module_name[:last_dot]
+    import_module = module_name[last_dot + 1:]
     m = __import__(from_module, globals(), locals(), [import_module])
     return getattr(m, import_module)
 
@@ -1677,17 +1679,6 @@ def _unquote(s, encoding='utf-8'):
     u'http://example/test?a=1+'
     '''
     return urllib.unquote(s).decode(encoding)
-
-
-# def favicon_handler():
-#     return static_file_handler('/favicon.ico')
-
-
-
-
-
-
-
 
 
 

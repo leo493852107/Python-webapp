@@ -4,7 +4,7 @@
 
 
 from models import User, Blog, Comment
-from transwrap import db
+from transwarp import db
 
 db.create_engine(user='root', password='', database='awesome')
 
