@@ -2,12 +2,30 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9da2d909-ffb9-46e0-98d0-83c5dd11dd19" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/templates/test_users.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/urls.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/wsgiapp.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/Python-webapp.iml" afterPath="$PROJECT_DIR$/.idea/Python-webapp.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/favicon.ico" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/fonts/FontAwesome.otf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/fonts/fontawesome-webfont.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/fonts/fontawesome-webfont.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/fonts/fontawesome-webfont.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/css/addons/uikit.addons.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/css/addons/uikit.almost-flat.addons.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/css/addons/uikit.gradient.addons.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/css/awesome.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/css/uikit.almost-flat.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/css/uikit.gradient.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/css/uikit.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/js/awesome.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/js/html5.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/js/jquery.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/js/md5.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/js/sticky.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/js/uikit.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/js/vue.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/templates/__base__.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/templates/blogs.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/transwarp/web.py" afterPath="$PROJECT_DIR$/www/transwarp/web.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/urls.py" afterPath="$PROJECT_DIR$/www/urls.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/wsgiapp.py" afterPath="$PROJECT_DIR$/www/wsgiapp.py" />
     </list>
     <ignored path="Python-webapp.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -20,18 +38,19 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/Python-webapp$web.coverage" NAME="web Coverage Results" MODIFIED="1479123286005" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/www/transwarp" />
+    <SUITE FILE_PATH="coverage/Python-webapp$web.coverage" NAME="web Coverage Results" MODIFIED="1479172019569" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/www/transwarp" />
+    <SUITE FILE_PATH="coverage/Python-webapp$urls.coverage" NAME="urls Coverage Results" MODIFIED="1479177453872" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/www" />
     <SUITE FILE_PATH="coverage/Python-webapp$Doctests_in_db__1_.coverage" NAME="Doctests in db (1) Coverage Results" MODIFIED="1478943427992" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/www/db" />
-    <SUITE FILE_PATH="coverage/Python-webapp$docrunner.coverage" NAME="docrunner Coverage Results" MODIFIED="1478943480998" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$APPLICATION_HOME_DIR$/helpers/pycharm" />
     <SUITE FILE_PATH="coverage/Python-webapp$config.coverage" NAME="config Coverage Results" MODIFIED="1479125491200" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/www" />
     <SUITE FILE_PATH="coverage/Python-webapp$Doctests_in_db.coverage" NAME="Doctests in db Coverage Results" MODIFIED="1478943447868" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/www/db" />
+    <SUITE FILE_PATH="coverage/Python-webapp$db.coverage" NAME="db Coverage Results" MODIFIED="1479004255529" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/www/transwrap" />
+    <SUITE FILE_PATH="coverage/Python-webapp$test_db.coverage" NAME="test_db Coverage Results" MODIFIED="1479128381854" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/www" />
+    <SUITE FILE_PATH="coverage/Python-webapp$docrunner.coverage" NAME="docrunner Coverage Results" MODIFIED="1478943480998" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$APPLICATION_HOME_DIR$/helpers/pycharm" />
     <SUITE FILE_PATH="coverage/Python-webapp$models.coverage" NAME="models Coverage Results" MODIFIED="1479004621422" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/www" />
     <SUITE FILE_PATH="coverage/Python-webapp$orm.coverage" NAME="orm Coverage Results" MODIFIED="1479004231570" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/www/transwrap" />
-    <SUITE FILE_PATH="coverage/Python-webapp$db.coverage" NAME="db Coverage Results" MODIFIED="1479004255529" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/www/transwrap" />
-    <SUITE FILE_PATH="coverage/Python-webapp$wsgiapp.coverage" NAME="wsgiapp Coverage Results" MODIFIED="1479128638982" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/www" />
+    <SUITE FILE_PATH="coverage/Python-webapp$wsgiapp.coverage" NAME="wsgiapp Coverage Results" MODIFIED="1479179572049" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/www" />
     <SUITE FILE_PATH="coverage/Python-webapp$test.coverage" NAME="test Coverage Results" MODIFIED="1479015975429" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/www/transwrap" />
     <SUITE FILE_PATH="coverage/Python-webapp$Doctest_Response_status.coverage" NAME="Doctest Response.status Coverage Results" MODIFIED="1479121891088" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/www/transwarp" />
-    <SUITE FILE_PATH="coverage/Python-webapp$test_db.coverage" NAME="test_db Coverage Results" MODIFIED="1479128381854" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/www" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -42,40 +61,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="test_db.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/www/test_db.py">
+      <file leaf-file-name="wsgiapp.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/www/wsgiapp.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="320">
-              <caret line="20" column="7" selection-start-line="20" selection-start-column="7" selection-end-line="23" selection-end-column="7" />
+            <state relative-caret-position="1128">
+              <caret line="52" column="32" selection-start-line="52" selection-start-column="32" selection-end-line="52" selection-end-column="32" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="web.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/www/transwarp/web.py">
+      <file leaf-file-name="__base__.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/www/templates/__base__.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="349">
-              <caret line="1177" column="11" selection-start-line="1177" selection-start-column="11" selection-end-line="1177" selection-end-column="11" />
-              <folding>
-                <marker date="1479128638000" expanded="true" signature="30838:30862" ph="..." />
-                <marker date="1479128638000" expanded="true" signature="31223:31248" ph="..." />
-                <marker date="1479128638000" expanded="true" signature="37922:37958" ph="..." />
-                <marker date="1479128638000" expanded="true" signature="38118:38148" ph="..." />
-                <marker date="1479128638000" expanded="true" signature="40038:40088" ph="..." />
-                <marker date="1479128638000" expanded="true" signature="40136:40194" ph="..." />
-                <marker date="1479128638000" expanded="true" signature="40247:40382" ph="..." />
-                <marker date="1479128638000" expanded="true" signature="40430:40565" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="wsgiapp.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/www/wsgiapp.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="232">
-              <caret line="32" column="17" selection-start-line="32" selection-start-column="17" selection-end-line="32" selection-end-column="17" />
+            <state relative-caret-position="106">
+              <caret line="73" column="84" selection-start-line="73" selection-start-column="84" selection-end-line="73" selection-end-column="84" />
               <folding />
             </state>
           </provider>
@@ -86,8 +86,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -114,10 +114,12 @@
         <option value="$PROJECT_DIR$/www/config_override.py" />
         <option value="$PROJECT_DIR$/www/config.py" />
         <option value="$PROJECT_DIR$/www/templates/test_users.html" />
-        <option value="$PROJECT_DIR$/www/urls.py" />
-        <option value="$PROJECT_DIR$/www/wsgiapp.py" />
         <option value="$PROJECT_DIR$/www/test_db.py" />
         <option value="$PROJECT_DIR$/www/transwarp/web.py" />
+        <option value="$PROJECT_DIR$/www/templates/blogs.html" />
+        <option value="$PROJECT_DIR$/www/urls.py" />
+        <option value="$PROJECT_DIR$/www/wsgiapp.py" />
+        <option value="$PROJECT_DIR$/www/templates/__base__.html" />
       </list>
     </option>
   </component>
@@ -191,7 +193,56 @@
       <pane id="Scratches" />
       <pane id="Scope" />
       <pane id="ProjectPane">
-        <subPane />
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Python-webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Python-webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Python-webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Python-webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Python-webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Python-webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Python-webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
       </pane>
     </panes>
   </component>
@@ -205,10 +256,12 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/www/static" />
+      <recent name="$PROJECT_DIR$/www" />
       <recent name="$PROJECT_DIR$/www/db" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.test_db">
+  <component name="RunManager" selected="Python.wsgiapp">
     <configuration default="false" name="web" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -277,6 +330,24 @@
       <module name="Python-webapp" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/www/test_db.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="urls" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/www" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Python-webapp" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/www/urls.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -489,18 +560,20 @@
       <option name="USE_KEYWORD" value="false" />
       <method />
     </configuration>
-    <list size="4">
+    <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Python.web" />
       <item index="1" class="java.lang.String" itemvalue="Python.config" />
       <item index="2" class="java.lang.String" itemvalue="Python.wsgiapp" />
       <item index="3" class="java.lang.String" itemvalue="Python.test_db" />
+      <item index="4" class="java.lang.String" itemvalue="Python.urls" />
     </list>
     <recent_temporary>
-      <list size="4">
+      <list size="5">
         <item index="0" class="java.lang.String" itemvalue="Python.wsgiapp" />
-        <item index="1" class="java.lang.String" itemvalue="Python.test_db" />
-        <item index="2" class="java.lang.String" itemvalue="Python.config" />
-        <item index="3" class="java.lang.String" itemvalue="Python.web" />
+        <item index="1" class="java.lang.String" itemvalue="Python.urls" />
+        <item index="2" class="java.lang.String" itemvalue="Python.web" />
+        <item index="3" class="java.lang.String" itemvalue="Python.test_db" />
+        <item index="4" class="java.lang.String" itemvalue="Python.config" />
       </list>
     </recent_temporary>
   </component>
@@ -551,6 +624,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2780822" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -563,7 +637,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Concurrent Activities Diagram" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
     </layout>
@@ -591,14 +664,14 @@
         <state relative-caret-position="24528">
           <caret line="1022" column="34" selection-start-line="1022" selection-start-column="34" selection-end-line="1022" selection-end-column="34" />
           <folding>
-            <marker date="1479128638000" expanded="true" signature="30838:30862" ph="..." />
-            <marker date="1479128638000" expanded="true" signature="31223:31248" ph="..." />
-            <marker date="1479128638000" expanded="true" signature="37922:37958" ph="..." />
-            <marker date="1479128638000" expanded="true" signature="38118:38148" ph="..." />
-            <marker date="1479128638000" expanded="true" signature="40038:40088" ph="..." />
-            <marker date="1479128638000" expanded="true" signature="40136:40194" ph="..." />
-            <marker date="1479128638000" expanded="true" signature="40247:40382" ph="..." />
-            <marker date="1479128638000" expanded="true" signature="40430:40565" ph="..." />
+            <marker date="1479172010000" expanded="true" signature="30838:30862" ph="..." />
+            <marker date="1479172010000" expanded="true" signature="31223:31248" ph="..." />
+            <marker date="1479172010000" expanded="true" signature="37922:37958" ph="..." />
+            <marker date="1479172010000" expanded="true" signature="38118:38148" ph="..." />
+            <marker date="1479172010000" expanded="true" signature="40038:40088" ph="..." />
+            <marker date="1479172010000" expanded="true" signature="40136:40194" ph="..." />
+            <marker date="1479172010000" expanded="true" signature="40247:40382" ph="..." />
+            <marker date="1479172010000" expanded="true" signature="40430:40565" ph="..." />
           </folding>
         </state>
       </provider>
@@ -805,16 +878,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="17" column="27" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="27" />
-          <folding>
-            <element signature="e#79#93#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/www/test_db.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="320">
@@ -823,28 +886,68 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/wsgiapp.py">
+    <entry file="file://$PROJECT_DIR$/www/static/css/uikit.min.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="32" column="17" selection-start-line="32" selection-start-column="17" selection-end-line="32" selection-end-column="17" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/pycharm.jar!/resources/html5-schema/html5/meta.rnc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="166">
+          <caret line="24" column="16" selection-start-line="24" selection-start-column="16" selection-end-line="24" selection-end-column="16" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/www/transwarp/web.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="349">
-          <caret line="1177" column="11" selection-start-line="1177" selection-start-column="11" selection-end-line="1177" selection-end-column="11" />
+        <state relative-caret-position="166">
+          <caret line="1271" column="8" selection-start-line="1271" selection-start-column="8" selection-end-line="1271" selection-end-column="8" />
           <folding>
-            <marker date="1479128638000" expanded="true" signature="30838:30862" ph="..." />
-            <marker date="1479128638000" expanded="true" signature="31223:31248" ph="..." />
-            <marker date="1479128638000" expanded="true" signature="37922:37958" ph="..." />
-            <marker date="1479128638000" expanded="true" signature="38118:38148" ph="..." />
-            <marker date="1479128638000" expanded="true" signature="40038:40088" ph="..." />
-            <marker date="1479128638000" expanded="true" signature="40136:40194" ph="..." />
-            <marker date="1479128638000" expanded="true" signature="40247:40382" ph="..." />
-            <marker date="1479128638000" expanded="true" signature="40430:40565" ph="..." />
+            <marker date="1479172010000" expanded="true" signature="30838:30862" ph="..." />
+            <marker date="1479172010000" expanded="true" signature="31223:31248" ph="..." />
+            <marker date="1479172010000" expanded="true" signature="37922:37958" ph="..." />
+            <marker date="1479172010000" expanded="true" signature="38118:38148" ph="..." />
+            <marker date="1479172010000" expanded="true" signature="40038:40088" ph="..." />
+            <marker date="1479172010000" expanded="true" signature="40136:40194" ph="..." />
+            <marker date="1479172010000" expanded="true" signature="40247:40382" ph="..." />
+            <marker date="1479172010000" expanded="true" signature="40430:40565" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="139">
+          <caret line="10" column="3" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/templates/blogs.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="35" column="14" selection-start-line="35" selection-start-column="14" selection-end-line="35" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/wsgiapp.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1128">
+          <caret line="52" column="32" selection-start-line="52" selection-start-column="32" selection-end-line="52" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/templates/__base__.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="106">
+          <caret line="73" column="84" selection-start-line="73" selection-start-column="84" selection-end-line="73" selection-end-column="84" />
+          <folding />
         </state>
       </provider>
     </entry>
