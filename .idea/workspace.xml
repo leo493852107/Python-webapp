@@ -2,8 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9da2d909-ffb9-46e0-98d0-83c5dd11dd19" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/apis.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/templates/register.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/templates/signin.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/www/favicon.ico" afterPath="$PROJECT_DIR$/www/static/favicon.ico" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/urls.py" afterPath="$PROJECT_DIR$/www/urls.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/wsgiapp.py" afterPath="$PROJECT_DIR$/www/wsgiapp.py" />
     </list>
     <ignored path="Python-webapp.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -27,7 +31,7 @@
     <SUITE FILE_PATH="coverage/Python-webapp$docrunner.coverage" NAME="docrunner Coverage Results" MODIFIED="1478943480998" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$APPLICATION_HOME_DIR$/helpers/pycharm" />
     <SUITE FILE_PATH="coverage/Python-webapp$models.coverage" NAME="models Coverage Results" MODIFIED="1479004621422" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/www" />
     <SUITE FILE_PATH="coverage/Python-webapp$orm.coverage" NAME="orm Coverage Results" MODIFIED="1479004231570" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/www/transwrap" />
-    <SUITE FILE_PATH="coverage/Python-webapp$wsgiapp.coverage" NAME="wsgiapp Coverage Results" MODIFIED="1479179572049" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/www" />
+    <SUITE FILE_PATH="coverage/Python-webapp$wsgiapp.coverage" NAME="wsgiapp Coverage Results" MODIFIED="1479373230600" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/www" />
     <SUITE FILE_PATH="coverage/Python-webapp$test.coverage" NAME="test Coverage Results" MODIFIED="1479015975429" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/www/transwrap" />
     <SUITE FILE_PATH="coverage/Python-webapp$Doctest_Response_status.coverage" NAME="Doctest Response.status Coverage Results" MODIFIED="1479121891088" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/www/transwarp" />
   </component>
@@ -40,12 +44,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="wsgiapp.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="wsgiapp.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/wsgiapp.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="46" column="0" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+            <state relative-caret-position="222">
+              <caret line="50" column="19" selection-start-line="50" selection-start-column="19" selection-end-line="50" selection-end-column="19" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="urls.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/www/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="418">
+              <caret line="108" column="27" selection-start-line="108" selection-start-column="27" selection-end-line="108" selection-end-column="27" />
+              <folding>
+                <element signature="e#79#124#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -55,8 +71,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -86,10 +102,12 @@
         <option value="$PROJECT_DIR$/www/test_db.py" />
         <option value="$PROJECT_DIR$/www/transwarp/web.py" />
         <option value="$PROJECT_DIR$/www/templates/blogs.html" />
-        <option value="$PROJECT_DIR$/www/urls.py" />
-        <option value="$PROJECT_DIR$/www/wsgiapp.py" />
         <option value="$PROJECT_DIR$/www/templates/__base__.html" />
         <option value="$PROJECT_DIR$/www/apis.py" />
+        <option value="$PROJECT_DIR$/www/wsgiapp.py" />
+        <option value="$PROJECT_DIR$/www/templates/register.html" />
+        <option value="$PROJECT_DIR$/www/templates/signin.html" />
+        <option value="$PROJECT_DIR$/www/urls.py" />
       </list>
     </option>
   </component>
@@ -176,13 +194,16 @@
     <property name="FullScreen" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/www/static" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/www/static" />
       <recent name="$PROJECT_DIR$/www" />
       <recent name="$PROJECT_DIR$/www/db" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.apis">
+  <component name="RunManager" selected="Python.wsgiapp">
     <configuration default="false" name="web" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -490,8 +511,8 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.apis" />
-        <item index="1" class="java.lang.String" itemvalue="Python.wsgiapp" />
+        <item index="0" class="java.lang.String" itemvalue="Python.wsgiapp" />
+        <item index="1" class="java.lang.String" itemvalue="Python.apis" />
         <item index="2" class="java.lang.String" itemvalue="Python.urls" />
         <item index="3" class="java.lang.String" itemvalue="Python.web" />
         <item index="4" class="java.lang.String" itemvalue="Python.test_db" />
@@ -545,10 +566,10 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2780822" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2780822" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -651,31 +672,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/transwarp/db.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="263" column="0" selection-start-line="263" selection-start-column="0" selection-end-line="263" selection-end-column="0" />
-          <folding>
-            <marker date="1479005726000" expanded="true" signature="3670:3972" ph="..." />
-            <marker date="1479005726000" expanded="true" signature="6487:6520" ph="INSERT INTO `missing_value`... " />
-            <marker date="1479005726000" expanded="true" signature="11274:11299" ph="DROP TABLE i... " />
-            <marker date="1479005726000" expanded="true" signature="11314:11407" ph="CREATE TABLE... user" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/schema.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
           <caret line="12" column="24" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="12" column="6" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
         </state>
       </provider>
     </entry>
@@ -710,25 +711,6 @@
         <state relative-caret-position="0">
           <caret line="0" column="21" selection-start-line="0" selection-start-column="21" selection-end-line="0" selection-end-column="21" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/transwarp/orm.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="279" column="12" selection-start-line="279" selection-start-column="12" selection-end-line="279" selection-end-column="12" />
-          <folding>
-            <marker date="1479005691000" expanded="true" signature="9499:9526" ph="SELECT * FRO... missing_value" />
-            <marker date="1479005691000" expanded="true" signature="9873:9890" ph="SELECT * FRO... missing_value" />
-            <marker date="1479005691000" expanded="true" signature="10095:10113" ph="SELECT * FRO... missing_value" />
-            <marker date="1479005691000" expanded="true" signature="10316:10335" ph="SELECT * FRO... missing_value" />
-            <marker date="1479005691000" expanded="true" signature="10571:10599" ph="SELECT count... missing_value" />
-            <marker date="1479005691000" expanded="true" signature="10828:10857" ph="SELECT count... missing_value" />
-            <marker date="1479005691000" expanded="true" signature="11919:11948" ph="UPDATE `miss... " />
-            <marker date="1479005691000" expanded="true" signature="12298:12327" ph="DELETE FROM " />
-            <marker date="1479005691000" expanded="true" signature="13137:13162" ph="DROP table i... " />
-            <marker date="1479005691000" expanded="true" signature="13180:13270" ph="CREATE table... user" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -823,43 +805,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/transwarp/web.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="166">
-          <caret line="1271" column="8" selection-start-line="1271" selection-start-column="8" selection-end-line="1271" selection-end-column="8" />
-          <folding>
-            <marker date="1479172010000" expanded="true" signature="30838:30862" ph="..." />
-            <marker date="1479172010000" expanded="true" signature="31223:31248" ph="..." />
-            <marker date="1479172010000" expanded="true" signature="37922:37958" ph="..." />
-            <marker date="1479172010000" expanded="true" signature="38118:38148" ph="..." />
-            <marker date="1479172010000" expanded="true" signature="40038:40088" ph="..." />
-            <marker date="1479172010000" expanded="true" signature="40136:40194" ph="..." />
-            <marker date="1479172010000" expanded="true" signature="40247:40382" ph="..." />
-            <marker date="1479172010000" expanded="true" signature="40430:40565" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="139">
-          <caret line="10" column="3" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/www/templates/blogs.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="250">
           <caret line="35" column="14" selection-start-line="35" selection-start-column="14" selection-end-line="35" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/templates/__base__.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="106">
-          <caret line="73" column="84" selection-start-line="73" selection-start-column="84" selection-end-line="73" selection-end-column="84" />
           <folding />
         </state>
       </provider>
@@ -877,16 +826,135 @@
         <state relative-caret-position="307">
           <caret line="99" column="18" selection-start-line="99" selection-start-column="18" selection-end-line="99" selection-end-column="18" />
           <folding>
-            <element signature="e#327#362#0" expanded="true" />
+            <element signature="e#327#362#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/Cellar/python/2.7.12_2/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/twisted/cred/test/test_strcred.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="101" column="13" selection-start-line="101" selection-start-column="13" selection-end-line="101" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/Cellar/python/2.7.12_2/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/django/core/files/uploadhandler.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="76" column="13" selection-start-line="76" selection-start-column="13" selection-end-line="76" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/static/js/awesome.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="2" column="9" selection-start-line="2" selection-start-column="9" selection-end-line="2" selection-end-column="9" />
+          <folding>
+            <marker date="1402097934000" expanded="true" signature="4674:4680" ph=" " />
+            <marker date="1402097934000" expanded="true" signature="4680:4686" ph=" " />
+            <marker date="1402097934000" expanded="true" signature="4686:4692" ph=" " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="12" column="6" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/transwarp/db.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="157">
+          <caret line="394" column="31" selection-start-line="394" selection-start-column="30" selection-end-line="394" selection-end-column="31" />
+          <folding>
+            <marker date="1479005726000" expanded="true" signature="3670:3972" ph="..." />
+            <marker date="1479005726000" expanded="true" signature="6487:6520" ph="INSERT INTO `missing_value`... " />
+            <marker date="1479005726000" expanded="true" signature="11274:11299" ph="DROP TABLE i... " />
+            <marker date="1479005726000" expanded="true" signature="11314:11407" ph="CREATE TABLE... user" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/transwarp/web.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="121">
+          <caret line="1199" column="27" selection-start-line="1199" selection-start-column="27" selection-end-line="1199" selection-end-column="27" />
+          <folding>
+            <marker date="1479172010000" expanded="true" signature="30838:30862" ph="..." />
+            <marker date="1479172010000" expanded="true" signature="31223:31248" ph="..." />
+            <marker date="1479172010000" expanded="true" signature="37922:37958" ph="..." />
+            <marker date="1479172010000" expanded="true" signature="38118:38148" ph="..." />
+            <marker date="1479172010000" expanded="true" signature="40038:40088" ph="..." />
+            <marker date="1479172010000" expanded="true" signature="40136:40194" ph="..." />
+            <marker date="1479172010000" expanded="true" signature="40247:40382" ph="..." />
+            <marker date="1479172010000" expanded="true" signature="40430:40565" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/transwarp/orm.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="976">
+          <caret line="376" column="31" selection-start-line="376" selection-start-column="30" selection-end-line="376" selection-end-column="31" />
+          <folding>
+            <marker date="1479005691000" expanded="true" signature="9499:9526" ph="SELECT * FRO... missing_value" />
+            <marker date="1479005691000" expanded="true" signature="9873:9890" ph="SELECT * FRO... missing_value" />
+            <marker date="1479005691000" expanded="true" signature="10095:10113" ph="SELECT * FRO... missing_value" />
+            <marker date="1479005691000" expanded="true" signature="10316:10335" ph="SELECT * FRO... missing_value" />
+            <marker date="1479005691000" expanded="true" signature="10571:10599" ph="SELECT count... missing_value" />
+            <marker date="1479005691000" expanded="true" signature="10828:10857" ph="SELECT count... missing_value" />
+            <marker date="1479005691000" expanded="true" signature="11919:11948" ph="UPDATE `miss... " />
+            <marker date="1479005691000" expanded="true" signature="12298:12327" ph="DELETE FROM " />
+            <marker date="1479005691000" expanded="true" signature="13137:13162" ph="DROP table i... " />
+            <marker date="1479005691000" expanded="true" signature="13180:13270" ph="CREATE table... user" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/templates/__base__.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1632">
+          <caret line="73" column="84" selection-start-line="73" selection-start-column="84" selection-end-line="73" selection-end-column="84" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/templates/signin.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-422">
+          <caret line="48" column="7" selection-start-line="48" selection-start-column="7" selection-end-line="48" selection-end-column="7" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/www/wsgiapp.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="46" column="0" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+        <state relative-caret-position="222">
+          <caret line="50" column="19" selection-start-line="50" selection-start-column="19" selection-end-line="50" selection-end-column="19" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/templates/register.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1008">
+          <caret line="23" column="26" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="108" column="27" selection-start-line="108" selection-start-column="27" selection-end-line="108" selection-end-column="27" />
+          <folding>
+            <element signature="e#79#124#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
