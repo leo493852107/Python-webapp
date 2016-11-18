@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9da2d909-ffb9-46e0-98d0-83c5dd11dd19" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/templates/manage_blog_edit.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/templates/register.html" afterPath="$PROJECT_DIR$/www/templates/register.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/urls.py" afterPath="$PROJECT_DIR$/www/urls.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/templates/manage_blog_edit.html" afterPath="$PROJECT_DIR$/www/templates/manage_blog_edit.html" />
     </list>
     <ignored path="Python-webapp.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -29,7 +26,7 @@
     <SUITE FILE_PATH="coverage/Python-webapp$docrunner.coverage" NAME="docrunner Coverage Results" MODIFIED="1478943480998" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$APPLICATION_HOME_DIR$/helpers/pycharm" />
     <SUITE FILE_PATH="coverage/Python-webapp$models.coverage" NAME="models Coverage Results" MODIFIED="1479004621422" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/www" />
     <SUITE FILE_PATH="coverage/Python-webapp$orm.coverage" NAME="orm Coverage Results" MODIFIED="1479004231570" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/www/transwrap" />
-    <SUITE FILE_PATH="coverage/Python-webapp$wsgiapp.coverage" NAME="wsgiapp Coverage Results" MODIFIED="1479432273497" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/www" />
+    <SUITE FILE_PATH="coverage/Python-webapp$wsgiapp.coverage" NAME="wsgiapp Coverage Results" MODIFIED="1479433532223" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/www" />
     <SUITE FILE_PATH="coverage/Python-webapp$test.coverage" NAME="test Coverage Results" MODIFIED="1479015975429" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/www/transwrap" />
     <SUITE FILE_PATH="coverage/Python-webapp$Doctest_Response_status.coverage" NAME="Doctest Response.status Coverage Results" MODIFIED="1479121891088" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/www/transwarp" />
   </component>
@@ -42,14 +39,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="urls.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/www/urls.py">
+      <file leaf-file-name="manage_blog_edit.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/www/templates/manage_blog_edit.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="406">
-              <caret line="131" column="9" selection-start-line="131" selection-start-column="9" selection-end-line="131" selection-end-column="9" />
-              <folding>
-                <element signature="e#79#124#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="48">
+              <caret line="2" column="14" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="14" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -93,10 +88,10 @@
         <option value="$PROJECT_DIR$/www/templates/__base__.html" />
         <option value="$PROJECT_DIR$/www/apis.py" />
         <option value="$PROJECT_DIR$/www/wsgiapp.py" />
-        <option value="$PROJECT_DIR$/www/templates/manage_blog_edit.html" />
         <option value="$PROJECT_DIR$/www/templates/signin.html" />
         <option value="$PROJECT_DIR$/www/templates/register.html" />
         <option value="$PROJECT_DIR$/www/urls.py" />
+        <option value="$PROJECT_DIR$/www/templates/manage_blog_edit.html" />
       </list>
     </option>
   </component>
@@ -170,14 +165,7 @@
       <pane id="Scratches" />
       <pane id="Scope" />
       <pane id="ProjectPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Python-webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
+        <subPane />
       </pane>
     </panes>
   </component>
@@ -558,7 +546,7 @@
     <frame x="642" y="0" width="638" height="800" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13590604" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.13590604" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -818,14 +806,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file:///usr/local/Cellar/python/2.7.12_2/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/twisted/cred/test/test_strcred.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="101" column="13" selection-start-line="101" selection-start-column="13" selection-end-line="101" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///usr/local/Cellar/python/2.7.12_2/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/django/core/files/uploadhandler.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="234">
@@ -894,14 +874,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/templates/manage_blog_edit.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="274">
-          <caret line="61" column="15" selection-start-line="61" selection-start-column="15" selection-end-line="61" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/www/wsgiapp.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="91">
@@ -936,10 +908,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file:///usr/local/Cellar/python/2.7.12_2/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/twisted/cred/test/test_strcred.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="166">
+          <caret line="101" column="13" selection-start-line="101" selection-start-column="13" selection-end-line="101" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/www/transwarp/web.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="166">
-          <caret line="61" column="0" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
+          <caret line="1575" column="0" selection-start-line="1575" selection-start-column="0" selection-end-line="1575" selection-end-column="0" />
           <folding>
             <marker date="1479172010000" expanded="true" signature="30838:30862" ph="..." />
             <marker date="1479172010000" expanded="true" signature="31223:31248" ph="..." />
@@ -955,11 +935,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/www/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="406">
-          <caret line="131" column="9" selection-start-line="131" selection-start-column="9" selection-end-line="131" selection-end-column="9" />
+        <state relative-caret-position="-26">
+          <caret line="69" column="0" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
           <folding>
             <element signature="e#79#124#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/templates/manage_blog_edit.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="2" column="14" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="14" />
+          <folding />
         </state>
       </provider>
     </entry>
