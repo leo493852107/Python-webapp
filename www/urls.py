@@ -106,7 +106,7 @@ def authenticate():
     max_age = 604800 if remember == 'true' else None
     cookie = make_signed_cookie(user.id, user.password, max_age)
     ctx.response.set_cookie(_COOKIE_NAME, cookie, max_age=max_age)
-    user.password = '123456'
+    user.password = '******'
     return user
 
 
@@ -119,7 +119,7 @@ _RE_MD5 = re.compile(r'^[0-9a-f]{32}$')
 def register_user():
     i = ctx.request.input(name='', email='', password='')
     name = i.name.strip()
-    email = i.emai.strip().lower()
+    email = i.email.strip().lower()
     password = i.password
     if not name:
         raise APIValueError('name')
@@ -143,6 +143,32 @@ def register_user():
 @get('/register')
 def register():
     return dict()
+
+
+@view('manage_blog_edit.html')
+@get('/manage/blogs/create')
+def manage_blogs_create():
+    return dict(id=None, action='/api/blogs', redirect='/manage/blogs', user=ctx.request.user)
+
+
+@api
+@post('/api/blogs')
+def api_create_blog():
+    check_admin()
+    i = ctx.request.input(name='', summary='', content='')
+    name = i.name.strip()
+    summary = i.summary.strip()
+    content = i.content.strip()
+    if not name:
+        raise APIValueError('name', 'name cannot be empty.')
+    if not summary:
+        raise APIValueError('summary', 'summary cannot be empty.')
+    if not content:
+        raise APIValueError('content', 'content cannot be empty.')
+    user = ctx.request.user
+    blog = Blog(user_id=user.id, user_name=user.name, name=name, summary=summary, content=content)
+    blog.insert()
+    return blog
 
 
 @api

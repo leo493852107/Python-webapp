@@ -27,7 +27,7 @@
                         if (!this.name.trim()) {
                             return showError('请输入名字');
                         }
-                        if (!this.validateEmail(this.email.trim().toLowerCase())) {
+                        if (!validateEmail(this.email.trim().toLowerCase())) {
                             return showError('请输入与正确的Email地址');
                         }
                         if (this.password1.length < 6) {
